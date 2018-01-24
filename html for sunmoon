@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8"/>
+    <title>SunMoon</title>
+    <meta name="description" content="time of day">
+    <meta name="author" content="ethan">
+
+<style>
+img {
+    position: absolute;
+    left: 32%;
+    top: 30%;
+    z-index: -1;
+}
+body {
+text-align: center
+}
+</style>
+
+
+</head>
+
+<body style="background-color:#FFFFFF;">
+<h1>DAY OR NIGHT?</h1>
+
+<img src="https://78.media.tumblr.com/6167d8a0b9947b28cf3104a12b9ad64b/tumblr_inline_p2z5c8lozS1sjopk3_500.png" alt="sun" width="480" height="270">
+
+<script>
+var name;
+var currentDate = new Date; 
+var hour = currentDate.getHours();
+name = "admin"
+document.write("<h1><i><center>It is this hour: " + hour + "</center></i></h1>");
+document.write("<p><center>" + currentDate + "</center></p>");
+</script>
+
+<p id="skything">
+MOON<br>
+Good Evening!
+<img src="https://78.media.tumblr.com/bb40baaeaf24fb17835fa2cf60791066/tumblr_inline_p2z5cfChao1sjopk3_500.png" alt="moon" width="480" height="270">
+</p>
+
+<script>
+if (new Date().getHours() < 18) {
+    document.getElementById("skything").innerHTML = "SUN<br>Good Day!" ;
+}
+</script>
+
+</body>
+</html>
